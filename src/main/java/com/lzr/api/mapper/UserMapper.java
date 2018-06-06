@@ -13,4 +13,5 @@ public interface UserMapper {
      */
     @Insert("INSERT INTO user_login(user_name,user_password,user_level) VALUES(#{userName}, #{userPassword}, #{userLevel})")
     void insert(User user);
+
 }
