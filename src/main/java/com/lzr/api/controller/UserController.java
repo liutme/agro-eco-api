@@ -23,9 +23,9 @@ public class UserController {
     @RequestMapping("/register")
     public ResultResponse<String> userRegistration() {
         User user = new User();
-        user.setUserName("admin");
-        user.setUserPassword("admin123");
-        user.setUserLevel(0);
+        user.setUserName("lzr2");
+        user.setUserPassword("16899199");
+        user.setUserLevel(2);
         ResultResponse<String> result = userService.userRegistration(user);
         return result;
     }

@@ -1,0 +1,12 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://47.106.205.32:3306/agro?useUnicode=true&characterEncoding=utf-8
+    username: root
+    password: 123456
+
+mybatis:
+  type-aliases-package: com.lzr.api.vo
