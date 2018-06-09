@@ -22,6 +22,7 @@ public class UserController {
         user.setUserName("admin");
         user.setUserPassword("admin123");
         user.setUserLevel(0);
+
         ResultResponse<String> result = userService.userRegistration(user);
         return result;
     }
