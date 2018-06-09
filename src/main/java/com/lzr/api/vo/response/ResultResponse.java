@@ -1,15 +1,19 @@
 package com.lzr.api.vo.response;
 
+import io.swagger.annotations.ApiModelProperty;
+
 public class ResultResponse<T> {
 
     /**
      * 返回状态码，0失败，1成功
      */
+    @ApiModelProperty(value = "状态,1 成功  0 失败", dataType="int")
     private int state;
 
     /**
      * 返回消息
      */
+    @ApiModelProperty(value = "返回消息", dataType="String")
     private String msg;
 
     /**
