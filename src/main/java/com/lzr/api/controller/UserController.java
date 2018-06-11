@@ -11,15 +11,18 @@ import org.springframework.web.bind.annotation.RestController;
 
 import javax.annotation.Resource;
 
-@Api(value = "UserController", description = "用户相关")
+@Api(value = "user", description = "用户相关")
 @RestController
 @RequestMapping("/user")
 public class UserController {
 
-    @Resource(name = "UserServiceImp")
+
+//    @Resource(name = "UserServiceImp")
+//    private UserService userService;
+    @Autowired
     private UserService userService;
 
-    @ApiOperation(value="用户注册", notes="")
+    @ApiOperation(value="用户注册", notes="", httpMethod = "GET")
     @RequestMapping("/register")
     public ResultResponse<String> userRegistration() {
         User user = new User();
