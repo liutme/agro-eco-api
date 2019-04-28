@@ -32,4 +32,6 @@ public class UserController {
         ResultResponse<String> result = userService.userRegistration(user);
         return result;
     }
+
+
 }
